@@ -6,20 +6,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Produk</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Kategori</a>
+            <a class="nav-link" href="{{ URL::to('kategori') }}">Kategori</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Kontak</a>
+            <a class="nav-link" href="{{ URL::to('kontak') }}">Kontak</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tentang Kami</a>
+            <a class="nav-link" href="{{ URL::to('about') }}">Tentang Kami</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Login</a>
