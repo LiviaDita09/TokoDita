@@ -3,6 +3,8 @@
 use App\Http\Controllers\LatihanController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KategoriController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +32,13 @@ Route::get('/', [HomepageController::class, 'index']);
 Route::get('/about', [HomepageController::class, 'about']);
 Route::get('/kontak', [HomepageController::class, 'kontak']);
 Route::get('/kategori', [HomepageController::class, 'kategori']);
+
+// Route kategori grup
+Route::group(['prefix' => 'admin'], function(){
+    Route::get('/', 'DashboardController@index');
+    // route kategori
+    Route::resource('kategori', KategoriController::class);
+
+});
+
+// Route::get('/admin', [DashboardController::class, 'index']);
