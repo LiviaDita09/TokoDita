@@ -49,21 +49,21 @@ Route::prefix('/mahasiswa')->group(function () {
         $teks = "INI HALAMAN PENDAFTARAN";
 
         return view('mahasiswa.index', compact ('title', 'teks'));
-    });
+    })->name('mahasiswa.pendaftaran');
 
     Route::get('/ujian', function (){
         $title = "Halaman Ujian";
         $teks = "INI HALAMAN UJIAN";
 
         return view('mahasiswa/index', compact('title', 'teks'));
-    });
+    })->name('mahasiswa.ujian');
 
     Route::get('/nilai', function (){
         $title = "Halaman Nilai";
         $teks = "INI HALAMAN NILAI";
 
         return view('mahasiswa/index', compact('title', 'teks'));
-    });
+    })->name('mahasiswa.nilai');
 
 });
 

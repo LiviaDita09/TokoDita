@@ -10,14 +10,15 @@
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h3><center>{{ $teks }}</center></h3>
+    <center>
+        <h3>{{ $teks }}</h3>
+        <hr>
+        <a href= {{ Route ('mahasiswa.pendaftaran') }}>DAFTAR</a>
+        &nbsp; &nbsp; | &nbsp; &nbsp;
+        <a href= {{ Route ('mahasiswa.ujian') }}>UJIAN</a>
+        &nbsp; &nbsp; | &nbsp; &nbsp;
+        <a href= {{ Route ('mahasiswa.nilai') }}>NILAI</a>
+    </center>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="{{ asset('dashboard') }}/js/scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="{{ asset('dashboard') }}/assets/demo/chart-area-demo.js"></script>
-    <script src="{{ asset('dashboard') }}/assets/demo/chart-bar-demo.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-    <script src="{{ asset('dashboard') }}/js/datatables-simple-demo.js"></script>
 </body>
 </html>
