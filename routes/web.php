@@ -41,20 +41,29 @@ Route::group(['prefix' => 'admin'], function(){
 
 });
 
-// Route group UTS
+// Route group mahasiswa
 Route::prefix('/mahasiswa')->group(function () {
 
     Route::get('/pendaftaran', function (){
-        return'Halaman Pendaftaran';
-    })->name('mahasiswa.pendaftaran');
+        $title = "Halaman Pendaftaran";
+        $teks = "INI HALAMAN PENDAFTARAN";
+
+        return view('mahasiswa.index', compact ('title', 'teks'));
+    });
 
     Route::get('/ujian', function (){
-        return'Halaman Ujian';
-    })->name('mahasiswa.ujian');
+        $title = "Halaman Ujian";
+        $teks = "INI HALAMAN UJIAN";
+
+        return view('mahasiswa/index', compact('title', 'teks'));
+    });
 
     Route::get('/nilai', function (){
-        return'Halaman Nilai';
-    })->name('mahasiswa.nilai');
+        $title = "Halaman Nilai";
+        $teks = "INI HALAMAN NILAI";
+
+        return view('mahasiswa/index', compact('title', 'teks'));
+    });
 
 });
 
