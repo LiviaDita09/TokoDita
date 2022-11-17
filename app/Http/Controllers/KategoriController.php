@@ -14,4 +14,8 @@ class KategoriController extends Controller
         $data = array('title' => 'Kategori Produk');
         return view('kategori.create', $data);
     }
+    public function edit (){
+        $data = array('title' => 'Kategori Produk');
+        return view('kategori.edit', $data);
+    }
 }

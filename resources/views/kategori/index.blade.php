@@ -58,7 +58,7 @@
                                     <td>Nugget</td>
                                     <td>12 Produk</td>
                                     <td>
-                                        <a href="#" class="btn btn-smbtn-primary mr-2 mb-2">
+                                        <a href="{{ Route ('edit.kategori') }}" class="btn btn-smbtn-primary mr-2 mb-2">
                                             Edit
                                         </a>
                                         <button class="btn btn-sm btn-danger mb-2">
@@ -83,7 +83,7 @@
                                     <td>Siomay</td>
                                     <td>20 Produk</td>
                                     <td>
-                                        <a href="#" class="btn btn-smbtn-primary mr-2 mb-2">
+                                        <a href="{{ Route ('edit.kategori') }}" class="btn btn-smbtn-primary mr-2 mb-2">
                                             Edit
                                         </a>
                                         <button class="btn btn-sm btn-danger mb-2">
@@ -108,7 +108,7 @@
                                     <td>Fish Stick</td>
                                     <td>20 Produk</td>
                                     <td>
-                                        <a href="#" class="btn btn-smbtn-primary mr-2 mb-2">
+                                        <a href="{{ Route ('edit.kategori') }}" class="btn btn-smbtn-primary mr-2 mb-2">
                                             Edit
                                         </a>
                                         <button class="btn btn-sm btn-danger mb-2">
