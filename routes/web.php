@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\TransaksiController;
+use App\Http\Controllers\LaporanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,13 +34,19 @@ Route::get('/', [HomepageController::class, 'index']);
 Route::get('/about', [HomepageController::class, 'about']);
 Route::get('/kontak', [HomepageController::class, 'kontak']);
 Route::get('/kategori', [HomepageController::class, 'kategori']);
+Route::get('/admin', [DashboardController::class, 'index']);
 
 // Route kategori grup
 Route::group(['prefix' => 'admin'], function(){
-    Route::get('/', [DashboardController::class, 'index']);
-    // route kategori
-    Route::resource('kategori', KategoriController::class);
+    Route::get('/', [DashboardController::class, 'index'])->name('admin.dashboard');
+    Route::get('/kategori', [KategoriController::class, 'index'])->name('admin.kategori');
+    Route::get('/transaksi', [TransaksiController::class, 'index'])->name('admin.transaksi');
+    Route::get('/laporan', [LaporanController::class, 'index'])->name('admin.laporan');
 
+    Route::group(['prefix' => 'kategori'], function(){
+        Route::get('/', [KategoriController::class, 'index'])->name('admin.kategori');
+        Route::get('/create', [KategoriController::class, 'create'])->name('create.kategori');
+    });
 });
 
 // Route group mahasiswa
@@ -67,4 +75,4 @@ Route::prefix('/mahasiswa')->group(function () {
 
 });
 
-// Route::get('/admin', [DashboardController::class, 'index']);
+
