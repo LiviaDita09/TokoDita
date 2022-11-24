@@ -18,20 +18,20 @@
                                 <tr>
                                     <td>Kode Produk</td>
                                     <td>
-                                        PRO-12
+                                        FF-1
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Nama Produk</td>
-                                    <td>Baju Anak</td>
+                                    <td>Nugget</td>
                                 </tr>
                                 <tr>
                                     <td>Qty</td>
-                                    <td>12 pcs</td>
+                                    <td>40 pcs</td>
                                 </tr>
                                 <tr>
                                     <td>Harga</td>
-                                    <td>Rp. 15.0000</td>
+                                    <td>Rp. 25.0000</td>
                                 </tr>
                             </table>
                         </div>
@@ -62,43 +62,43 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-3 mb-2">
-                                <img src="{{ asset('images/slide1.jpg') }}" alt="image" class="img-thumbnail mb-2">
+                                <img src="{{ asset('assets/image/ff1.jpeg') }}" alt="image" class="img-thumbnail mb-2">
                                 <button class="btn-sm btn-danger btn">
                                     Delete
                                 </button>
                             </div>
                             <div class="col-md-3 mb-2">
-                                <img src="{{ asset('images/slide1.jpg') }}" alt="image" class="img-thumbnail mb-2">
+                                <img src="{{ asset('assets/image/n7.jpg') }}" alt="image" class="img-thumbnail mb-2">
                                 <button class="btn-sm btn-danger btn">
                                     Delete
                                 </button>
                             </div>
                             <div class="col-md-3 mb-2">
-                                <img src="{{ asset('images/slide1.jpg') }}" alt="image" class="img-thumbnail mb-2">
+                                <img src="{{ asset('assets/image/n3.jpg') }}" alt="image" class="img-thumbnail mb-2">
                                 <button class="btn-sm btn-danger btn">
                                     Delete
                                 </button>
                             </div>
                             <div class="col-md-3 mb-2">
-                                <img src="{{ asset('images/slide1.jpg') }}" alt="image" class="img-thumbnail mb-2">
+                                <img src="{{ asset('assets/image/n4.jpg') }}" alt="image" class="img-thumbnail mb-2">
                                 <button class="btn-sm btn-danger btn">
                                     Delete
                                 </button>
                             </div>
                             <div class="col-md-3 mb-2">
-                                <img src="{{ asset('images/slide1.jpg') }}" alt="image" class="img-thumbnail mb-2">
+                                <img src="{{ asset('assets/image/n2.jpg') }}" alt="image" class="img-thumbnail mb-2">
                                 <button class="btn-sm btn-danger btn">
                                     Delete
                                 </button>
                             </div>
                             <div class="col-md-3 mb-2">
-                                <img src="{{ asset('images/slide1.jpg') }}" alt="image" class="img-thumbnail mb-2">
+                                <img src="{{ asset('assets/image/n5.jpe') }}" alt="image" class="img-thumbnail mb-2">
                                 <button class="btn-sm btn-danger btn">
                                     Delete
                                 </button>
                             </div>
                             <div class="col-md-3 mb-2">
-                                <img src="{{ asset('images/slide1.jpg') }}" alt="image" class="img-thumbnail mb-2">
+                                <img src="{{ asset('assets/image/n6.jpg') }}" alt="image" class="img-thumbnail mb-2">
                                 <button class="btn-sm btn-danger btn">
                                     Delete
                                 </button>

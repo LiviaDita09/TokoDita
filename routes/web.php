@@ -8,6 +8,9 @@ use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\TransaksiController;
 use App\Http\Controllers\LaporanController;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\UserController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +47,9 @@ Route::group(['prefix' => 'admin'], function(){
     Route::get('/transaksi', [TransaksiController::class, 'index'])->name('admin.transaksi');
     Route::get('/laporan', [LaporanController::class, 'index'])->name('admin.laporan');
     Route::get('/produk', [ProdukController::class, 'index'])->name('admin.produk');
+    Route::get('/customer', [CustomerController::class, 'index'])->name('admin.customer');
+    Route::get('/profil', [UserController::class, 'index'])->name('admin.userprofil');
+    Route::get('/setting', [UserController::class, 'setting'])->name('admin.usersetting');
 
     Route::group(['prefix' => 'kategori'], function(){
         Route::get('/', [KategoriController::class, 'index'])->name('admin.kategori');
@@ -56,6 +62,17 @@ Route::group(['prefix' => 'admin'], function(){
         Route::get('/create', [ProdukController::class, 'create'])->name('create.produk');
         Route::get('/1', [ProdukController::class, 'show'])->name('show.produk');
         Route::get('/2', [ProdukController::class, 'edit'])->name('edit.produk');
+    });
+
+    Route::group(['prefix' => 'customer'], function(){
+        Route::get('/', [CustomerController::class, 'index'])->name('admin.customer');
+        Route::get('/edit', [CustomerController::class, 'edit'])->name('edit.customer');
+    });
+
+    Route::group(['prefix' => 'transaksi'], function(){
+        Route::get('/', [TransaksiController::class, 'index'])->name('admin.transaksi');
+        Route::get('/show', [TransaksiController::class, 'show'])->name('show.transaksi');
+        Route::get('/edit', [TransaksiController::class, 'edit'])->name('edit.transaksi');
     });
 });
 
