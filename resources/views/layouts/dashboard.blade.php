@@ -183,7 +183,7 @@
                                             <i class="right fas fa-angle-left"></i>
                                         </p>
                                     </a>
-                                    <ul class="nav nav-treeview">
+                                        <ul class="nav nav-treeview">
                                         <li class="nav-item">
                                             <a href="{{ Route ('admin.transaksi') }}" class="nav-link">
                                                 <i class="far fa-circle nav-icon"></i>
@@ -231,8 +231,9 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="nav-icon fas fa-sign-out-alt"></i>
+                                    <a href="#" class="nav-link" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                     <i class="nav-icon fas fa-sign-out-alt"></i>
                                         <p>Sign Out</p>
                                     </a>
                                 </li>

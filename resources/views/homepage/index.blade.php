@@ -10,8 +10,6 @@
 </head>
 <body>
  @include('layouts.menu')
-
- @extends('layouts.template')
  @section('content')
  <div class="row">
     <div class="col">

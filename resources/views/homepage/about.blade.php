@@ -1,5 +1,5 @@
 @extends('layouts.template')
-@include('layouts.menu')
+
 @section('content')
 <div class="container">
     <div class="row">
